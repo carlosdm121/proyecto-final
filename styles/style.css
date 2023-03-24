@@ -5,14 +5,18 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-image: url("https://i.ibb.co/Xsp09h1/paisaje-de-rick-y-morty-3840x2160-xtrafondos-com.jpg");
+  background-image: url("https://i.ibb.co/bKjRNxB/rick-and-morty-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: color;
 }
 /* Estilo del header */
 header {
   width: 100%;
   height: 250px;
-  background-color: rgba(0, 0, 0, 0.104);
+  background-color: rgba(0, 0, 0, 0.785);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -57,8 +61,16 @@ a {
   padding: 30px;
   margin: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: rgba(165, 163, 163, 0.705);
   border-radius: 10px;
+}
+
+.titulo-h3 {
+  text-align: center;
+  font-size: 25px;
+  text-decoration-line: underline;
 }
 
 .sinopsis-container img {
@@ -78,13 +90,14 @@ a {
 
 /* estilo de segunda seccion del main Personajes */
 
-.titulo {
+.titulo-personajes {
   margin: 20px;
   padding: 10px;
   background-color: rgba(165, 163, 163, 0.705);
   font-size: 25px;
   text-align: center;
   border-radius: 10px;
+  text-decoration-line: underline;
 }
 
 .personajes-container {
@@ -138,6 +151,11 @@ a {
   border-radius: 10px;
 }
 
+.titulo-mira-la-serie {
+  font-size: 40px;
+  text-decoration-line: underline;
+}
+
 .informacion-capitulos div {
   margin: 10px;
   padding: 10px;
@@ -159,8 +177,16 @@ a {
   padding: 30px;
   margin: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: rgba(165, 163, 163, 0.705);
   border-radius: 10px;
+}
+
+.titulo-biografia {
+  font-size: 25px;
+  text-align: center;
+  text-decoration-line: underline;
 }
 
 .biografia div {
@@ -295,5 +321,4 @@ footer img {
     justify-content: center;
     flex-wrap: wrap;
   }
-
 }
