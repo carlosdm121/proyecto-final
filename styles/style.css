@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-image: url("https://i.ibb.co/Xsp09h1/paisaje-de-rick-y-morty-3840x2160-xtrafondos-com.jpg");
+}
+/* Estilo del header */
+header {
+  width: 100%;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.104);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.rick-y-morty {
+  width: 200px;
+}
+
+.logo {
+  width: 380px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+header ul li {
+  background-color: rgba(165, 163, 163, 0.705);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Estilo de main sinopsis */
+
+.sinopsis-container {
+  height: 50%;
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  background-color: rgba(165, 163, 163, 0.705);
+  border-radius: 10px;
+}
+
+.sinopsis-container img {
+  width: 400px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.sinopsis-container div {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/* estilo de segunda seccion del main Personajes */
+
+.titulo {
+  margin: 20px;
+  padding: 10px;
+  background-color: rgba(165, 163, 163, 0.705);
+  font-size: 25px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.personajes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.tarjeta {
+  height: 300px;
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: rgba(165, 163, 163, 0.705);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tarjeta .imagen {
+  width: 120px;
+  border-radius: 50%;
+}
+
+.tarjeta .informacion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+}
+
+.informacion h3 {
+  font-size: 20px;
+  text-align: center;
+  margin: 5px;
+}
+
+/* Aqui se estiliza la tercera seccion del main para ver los episodios */
+
+.informacion-capitulos {
+  height: 50%;
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  background-color: rgba(165, 163, 163, 0.705);
+  border-radius: 10px;
+}
+
+.informacion-capitulos div {
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.informacion-capitulos img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Aca se encuentra el estilo de la Biografia */
+
+.biografia {
+  height: 50%;
+  padding: 30px;
+  margin: 20px;
+  display: flex;
+  background-color: rgba(165, 163, 163, 0.705);
+  border-radius: 10px;
+}
+
+.biografia div {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.biografia img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+/* Aca se encuentra el footer con las informacion del creador */
+
+footer {
+  background-color: rgb(165, 163, 163);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.104);
+}
+
+footer p {
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+footer ul {
+  list-style: none;
+  gap: 10px;
+}
+
+.datos-proyecto {
+  padding: 10px;
+  margin: 20px;
+}
+
+#datos-autor {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.datos-contacto {
+  padding: 10px;
+  margin: 20px;
+}
+
+footer img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Media Query */
+
+@media (max-width: 880px) {
+  header {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sinopsis-container p {
+    font-size: smaller;
+  }
+
+  .personajes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .tarjeta {
+    width: 40%;
+    height: 260px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .tarjeta .imagen {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .rick-y-morty {
+    width: 150px;
+  }
+
+  .logo {
+    width: 250px;
+  }
+
+  header div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .sinopsis-container div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sinopsis-container p {
+    font-size: smaller;
+  }
+
+  .personajes-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+}
