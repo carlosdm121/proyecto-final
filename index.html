@@ -9,25 +9,20 @@
   </head>
   <body>
     <header>
-      <div>
+      <div class="logo">
         <img
-          class="rick-y-morty"
-          src="https://i.ibb.co/YNfzX4B/58f37747a4fa116215a92414.png"
-          alt="imagen del logo"
-        />
-        <img
-          class="logo"
-          src="https://i.ibb.co/bzcMQmR/58f37720a4fa116215a9240f.png"
-          alt="logotipo de Rick y Morty"
+          src="https://i.ibb.co/5Wn38DR/logorickandmorty.png"
+          alt="Logo de Rick y Morty"
         />
       </div>
-      <nav>
-        <ul>
-          <li><a href="#sinopsis">Sinopsis</a></li>
-          <li><a href="#personajes">Personajes</a></li>
-          <li><a href="#ver-show">Ver el Show</a></li>
-        </ul>
-      </nav>
+      <div>
+        <nav>
+          <a href="#sinopsis" class="nav-link">Sinopsis</a>
+          <a href="#personajes" class="nav-link">Personajes</a>
+          <a href="#ver-show" class="nav-link">Ver el show</a>
+          <a href="#biografia" class="nav-link">Biografia</a>
+        </nav>
+      </div>
     </header>
     <main>
       <section id="sinopsis" class="sinopsis-container">
@@ -106,7 +101,7 @@
           </p>
         </div>
       </section>
-      <section class="biografia">
+      <section id="biografia" class="biografia">
         <img
           src="https://i.ibb.co/VY3s56L/mi-foto-perfil.jpg"
           alt="Foto del creado"
@@ -114,7 +109,8 @@
         <div>
           <h2 class="titulo-biografia">Biografia</h2>
           <p>
-            Hola mi nombre es Daniel Martinez, soy el creador de esta pagina web
+            Hola mi nombre es Daniel Martinez, soy el creador de esta pagina
+            web.
           </p>
           <p>
             Vivo en San Miguel de Tucumán, Provincia de Tucumán, Argentina, soy
@@ -134,37 +130,65 @@
         </div>
       </section>
     </main>
-    <footer>
-      <div class="datos-proyecto">
-        <ul>
-          <li id="datos-autor">Creado por Daniel Martinez</li>
-          <li>Introduccion al Frontend</li>
-          <li>Profesor: Gabriel Alberini</li>
-          <li>Argentina Programa</li>
-          <li>Comision: 172-C</li>
-          <li>2023</li>
-        </ul>
-      </div>
-      <div class="datos-contacto">
-        <ul>
-          <li>
+    <footer class="pie-pagina">
+      <div class="grupo-1">
+        <div class="box">
+          <figure>
+            <a href="#">
+              <img
+                src="https://i.ibb.co/Zc6WfVb/APLogo-20-20.png"
+                alt="Logo de Argentina Programa"
+              />
+            </a>
+          </figure>
+        </div>
+        <div class="box">
+          <h2>CREADO POR DANIEL MARTINEZ</h2>
+          <p>Introduccion al Frontend</p>
+          <p>Profesor: Gabriel Alberini</p>
+          <p>Argentina Programa</p>
+          <p>Comision: .23.W1.E1.MJ.TM-FRBA-172</p>
+        </div>
+        <div class="box">
+          <h2>SIGUEME</h2>
+          <div class="red-social">
+            <a
+              href="https://www.facebook.com/cardanielmartinez"
+              class="fa fa-facebook"
+              rel="noopener"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.instagram.com/danielcm.121/"
+              class="fa fa-instagram"
+              rel="noopener"
+              target="_blank"
+            ></a>
+            <a
+              href="mailto:carlosdmartinez121@gmail.com"
+              class="fa fa-google"
+              rel="noopener"
+              target="_blank"
+            ></a>
             <a
               href="https://github.com/carlosdm121"
-              target="_blank"
+              class="fa fa-github"
               rel="noopener"
-            >
-              <img src="https://i.ibb.co/K2k5KQv/github.png" alt="Github" />
-              Github
-            </a>
-          </li>
-          <li>
-            <a href="mailto: carlosdmartinez121@gmail.com">
-              <img src="https://i.ibb.co/FnGC40L/gmail-logo.png" alt="Gmail" />
-              Gmail
-            </a>
-          </li>
-        </ul>
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small
+          >&copy, 2023 <b>Argentina Programa</b> - Todos los Derechos
+          Reservados</small
+        >
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/8d388ff8e0.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
