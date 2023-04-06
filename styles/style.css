@@ -135,6 +135,10 @@ nav a:hover {
   margin: 5px;
 }
 
+.informacion p {
+  font-size: 20px;
+}
+
 /* Aqui se estiliza la tercera seccion del main para ver los episodios */
 
 .informacion-capitulos {
@@ -321,6 +325,15 @@ nav a:hover {
 
   .tarjeta .imagen {
     width: 120px;
+  }
+
+  .informacion h3 {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .informacion p {
+    font-size: 15px;
   }
 
   .pie-pagina .grupo-1 {
