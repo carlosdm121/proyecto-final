@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -295,6 +291,12 @@ nav a:hover {
   nav a {
     font-size: 10px;
     padding: 10px;
+  }
+
+  .sinopsis-container img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
   }
 
   .sinopsis-container p {
