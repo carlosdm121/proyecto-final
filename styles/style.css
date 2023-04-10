@@ -146,6 +146,8 @@ nav a:hover {
   padding: 30px;
   margin: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: rgba(165, 163, 163, 0.705);
   border-radius: 10px;
 }
@@ -166,7 +168,8 @@ nav a:hover {
 }
 
 .informacion-capitulos img {
-  width: 100%;
+  width: 200px;
+  height: 200px;
   border-radius: 10px;
 }
 
