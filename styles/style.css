@@ -18,17 +18,18 @@ body {
 header {
   max-width: 100%;
   min-height: 150px;
-  background-color: #0a141d;
+  background-color: rgba(255, 0, 0, 0.183);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  transition: background-color 2s ease;
 }
 
 .logo1 img {
   height: 100px;
   border-radius: 50%;
-  border-color: deepskyblue;
+  border: 5px solid #88fc08;
 }
 
 .logo2 img {
@@ -42,6 +43,7 @@ nav a {
   background-color: #0d2033;
   color: #efefef;
   border-radius: 10px;
+  border: 2px solid #88fc08;
 }
 
 nav a:hover {
@@ -58,6 +60,7 @@ nav a:hover {
   justify-content: center;
   background-color: rgba(165, 163, 163, 0.705);
   border-radius: 10px;
+  border: 2px solid #88fc08;
 }
 
 .titulo-h3 {
@@ -71,6 +74,7 @@ nav a:hover {
   width: 400px;
   margin: 10px;
   border-radius: 10px;
+  border: 2px solid #88fc08;
 }
 
 .sinopsis-container div {
@@ -84,6 +88,7 @@ nav a:hover {
 
 /* estilo de segunda seccion del main Personajes */
 
+/* Estilos para la grilla de personajes */
 .titulo-personajes {
   margin: 20px;
   padding: 10px;
@@ -93,52 +98,38 @@ nav a:hover {
   font-weight: 600;
   text-align: center;
   border-radius: 10px;
+  border: 2px solid #88fc08;
 }
 
-.personajes-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px;
+#characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
 }
 
-.tarjeta {
-  height: 300px;
-  width: 250px;
-  padding: 10px;
-  margin: 5px;
-  border-radius: 10px;
-  background-color: rgba(165, 163, 163, 0.705);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.tarjeta .imagen {
-  width: 120px;
-  border-radius: 50%;
-}
-
-.tarjeta .informacion {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 5px;
-  padding: 10px;
-}
-
-.informacion h3 {
-  font-size: 20px;
+.character-card {
+  border: 2px solid #88fc08;
+  border-radius: 8px;
+  padding: 16px;
   text-align: center;
-  margin: 5px;
+  background-color: rgba(165, 163, 163, 0.705);
 }
 
-.informacion p {
-  font-size: 20px;
+.character-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 16px;
 }
 
+.character-card h3 {
+  color: #000;
+}
+
+.character-card p {
+  color: #000;
+}
 /* Aqui se estiliza la tercera seccion del main para ver los episodios */
 
 .informacion-capitulos {
@@ -150,6 +141,7 @@ nav a:hover {
   justify-content: center;
   background-color: rgba(165, 163, 163, 0.705);
   border-radius: 10px;
+  border: 2px solid #88fc08;
 }
 
 .titulo-mira-la-serie {
@@ -171,6 +163,7 @@ nav a:hover {
   width: 200px;
   height: 200px;
   border-radius: 10px;
+  border: 2px solid #88fc08;
 }
 
 /* Aca se encuentra el estilo de la Biografia */
@@ -184,6 +177,7 @@ nav a:hover {
   justify-content: center;
   background-color: rgba(165, 163, 163, 0.705);
   border-radius: 10px;
+  border: 2px solid #88fc08;
 }
 
 .titulo-biografia {
@@ -206,8 +200,10 @@ nav a:hover {
   width: 200px;
   height: 200px;
   border-radius: 10px;
+  border: 2px solid #88fc08;
 }
 /* Aca se encuentra el footer con las informacion del creador */
+
 .pie-pagina {
   width: 100%;
   background-color: #0a141d;
@@ -276,7 +272,7 @@ nav a:hover {
 
 /* Media Query */
 
-@media (max-width: 880px) {
+@media (max-width: 768px) {
   header {
     min-height: 250px;
     background-color: #0a141d;
@@ -310,33 +306,8 @@ nav a:hover {
     font-size: smaller;
   }
 
-  .personajes-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-
-  .tarjeta {
-    width: 40%;
-    height: 280px;
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-  }
-
-  .tarjeta .imagen {
-    width: 120px;
-  }
-
-  .informacion h3 {
-    font-size: 15px;
-    text-align: center;
-  }
-
-  .informacion p {
-    font-size: 15px;
+  #characters-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   .pie-pagina .grupo-1 {
@@ -381,11 +352,5 @@ nav a:hover {
 
   .sinopsis-container p {
     font-size: smaller;
-  }
-
-  .personajes-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
   }
 }
