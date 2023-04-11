@@ -67,11 +67,12 @@ nav a:hover {
   text-align: center;
   font-size: 25px;
   font-weight: 600;
-  color: #0a141d;
+  color: transparent;
+  -webkit-text-stroke: 2px #88fc08;
 }
 
 .sinopsis-container img {
-  width: 400px;
+  width: 300px;
   margin: 10px;
   border-radius: 10px;
   border: 2px solid #88fc08;
@@ -93,7 +94,8 @@ nav a:hover {
   margin: 20px;
   padding: 10px;
   background-color: rgba(165, 163, 163, 0.705);
-  color: #0a141d;
+  color: transparent;
+  -webkit-text-stroke: 2px #88fc08;
   font-size: 25px;
   font-weight: 600;
   text-align: center;
@@ -102,6 +104,8 @@ nav a:hover {
 }
 
 #characters-grid {
+  margin: 10px;
+  padding: 10px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 16px;
@@ -130,6 +134,12 @@ nav a:hover {
 .character-card p {
   color: #000;
 }
+.character-card:hover {
+  background-color: khaki;
+  box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
+  -moz-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
+}
 /* Aqui se estiliza la tercera seccion del main para ver los episodios */
 
 .informacion-capitulos {
@@ -147,7 +157,8 @@ nav a:hover {
 .titulo-mira-la-serie {
   font-size: 40px;
   font-weight: 600;
-  color: #0a141d;
+  color: transparent;
+  -webkit-text-stroke: 2px #88fc08;
 }
 
 .informacion-capitulos div {
@@ -184,7 +195,8 @@ nav a:hover {
   font-size: 25px;
   font-weight: 600;
   text-align: center;
-  color: #0a141d;
+  color: transparent;
+  -webkit-text-stroke: 2px #88fc08;
 }
 
 .biografia div {
