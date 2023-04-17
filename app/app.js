@@ -21,12 +21,12 @@ fetch("https://rickandmortyapi.com/api/character")
 function createCharacterCards(characters) {
   const grid = document.getElementById("characters-grid");
 
-  // Eliminamos cualquier elemento hijo previo del contenedor
+  // Elimino cualquier elemento hijo previo del contenedor
   while (grid.firstChild) {
     grid.removeChild(grid.firstChild);
   }
 
-  // Recorremos la matriz de personajes y creamos elementos HTML para cada uno
+  // matriz de personajes y creo elementos HTML para cada uno
   characters.forEach((character) => {
     const card = document.createElement("div");
     card.classList.add("character-card");

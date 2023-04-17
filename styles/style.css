@@ -136,9 +136,9 @@ nav a:hover {
 }
 .character-card:hover {
   background-color: khaki;
-  box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
-  -moz-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
+  /* -moz-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
+  /* box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75); */
+  /* -webkit-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75); */
 }
 /* Aqui se estiliza la tercera seccion del main para ver los episodios */
 
@@ -351,7 +351,7 @@ nav a:hover {
 
   nav a {
     font-size: 12px;
-    padding: 10px;
+    padding: 5px;
   }
 
   .sinopsis-container div {
