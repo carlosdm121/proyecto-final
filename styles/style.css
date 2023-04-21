@@ -90,6 +90,7 @@ nav a:hover {
 
 .sinopsis-container div p {
   font-family: "Cartoon cookies", sans-serif;
+  color: #000;
 }
 
 /* estilo de segunda seccion del main Personajes */
@@ -128,25 +129,18 @@ nav a:hover {
 .character-card img {
   width: 100%;
   height: auto;
+  border: 2px solid #88fc08;
   border-radius: 50%;
   margin-bottom: 16px;
 }
 
-.character-card h3 {
-  color: #000;
-  font-family: "Cartoon cookies", sans-serif;
-}
-
-.character-card p {
-  color: #000;
-  font-family: "Cartoon cookies", sans-serif;
-}
 .character-card:hover {
   background-color: khaki;
-  /* -moz-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
-  /* box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75); */
-  /* -webkit-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75); */
+  -moz-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
+  box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: 1px 0px 19px 1px rgba(255, 255, 255, 0.75);
 }
+
 /* Aqui se estiliza la tercera seccion del main para ver los episodios */
 
 .informacion-capitulos {
@@ -179,6 +173,7 @@ nav a:hover {
 
 .informacion-capitulos div p {
   font-family: "Cartoon cookies", sans-serif;
+  color: #000;
 }
 
 .informacion-capitulos img {
@@ -221,6 +216,7 @@ nav a:hover {
 
 .biografia div p {
   font-family: "Cartoon cookies", sans-serif;
+  color: #000;
 }
 
 .biografia img {
